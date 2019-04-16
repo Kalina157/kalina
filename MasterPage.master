@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color: #003399">
+        <div style="text-align: center">
+            <center> 
+        <asp:Panel ID="Panel1" runat="server">
+        <table>
+                   <tr>
+                       <td>
+                           <img src="pics/Capture11.PNG" />
+                       </td>
+                   </tr>
+                    
+                    </table>
+        <td  >
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table">
+                <DynamicMenuItemStyle BorderColor="#336699" HorizontalPadding="3px" ItemSpacing="5px" />
+                <Items >
+                   <asp:MenuItem Text="Начало" Value="Начало" NavigateUrl="~/Начало.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Новини" Value="Новини" NavigateUrl="~/Грипна ваканция..aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="За училището" Value="За училището">
+                        <asp:MenuItem Text="История" Value="История" NavigateUrl="~/История.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Ръководство" Value="Ръководство"></asp:MenuItem>
+                        <asp:MenuItem Text="Бюджет" Value="Бюджет"></asp:MenuItem>
+                        <asp:MenuItem Text="Профил на купувача" Value="Профил на купувача"></asp:MenuItem>
+                        <asp:MenuItem Text="Вътрешен правилник" Value="Вътрешен правилник"></asp:MenuItem>
+                        <asp:MenuItem Text="Етичен кодекс" Value="Етичен кодекс"></asp:MenuItem>
+                        <asp:MenuItem Text="Стратегия за развитие" Value="Стратегия за развитие"></asp:MenuItem>
+                        <asp:MenuItem Text="Правилник за пезопастни условия" Value="Правилник за пезопастни условия"></asp:MenuItem>
+                        <asp:MenuItem Text="Правилник за трудов ред" Value="Правилник за трудов ред"></asp:MenuItem>
+                        <asp:MenuItem Text="Извънкласни дейности" Value="Извънкласни дейности"></asp:MenuItem>
+                        <asp:MenuItem Text="Срещу тероризма" Value="Срещу тероризма"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Обучение" Value="Обучение">
+                        <asp:MenuItem Text="Програма" Value="Програма"></asp:MenuItem>
+                        <asp:MenuItem Text="Проекти" Value="Проекти"></asp:MenuItem>
+                        <asp:MenuItem Text="Стипендии" Value="Стипендии"></asp:MenuItem>
+                        <asp:MenuItem Text="ДЗИ" Value="ДЗИ"></asp:MenuItem>
+                        <asp:MenuItem Text="Дипломи XII лас" Value="Дипломи XII лас"></asp:MenuItem>
+                        <asp:MenuItem Text="Консултации" Value="Консултации"></asp:MenuItem>
+                        <asp:MenuItem Text="График за контролни" Value="График за контролни"></asp:MenuItem>
+                        <asp:MenuItem Text="Заявление" Value="Заявление"></asp:MenuItem>
+                        <asp:MenuItem Text="При тормоз/насилие" Value="При тормоз/насилие"></asp:MenuItem>
+                        <asp:MenuItem Text="Школи" Value="Школи"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Прием" Value="Прием">
+                        <asp:MenuItem Text="След IV лас" Value="След IV лас"></asp:MenuItem>
+                        <asp:MenuItem Text="След VII клас" Value="След VII клас"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Състезания" Value="Състезания"></asp:MenuItem>
+                    <asp:MenuItem Text="Училищен живот" Value="Училищен живот">
+                        <asp:MenuItem Text="Библиотека" Value="Библиотека"></asp:MenuItem>
+                        <asp:MenuItem Text="Ученически съвет" Value="Ученически съвет"></asp:MenuItem>
+                        <asp:MenuItem Text="Клубове" Value="Клубове"></asp:MenuItem>
+                        <asp:MenuItem Text="Ученическо творчество" Value="Ученическо творчество" NavigateUrl="~/Ученическо творчество.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Театрълна трупа" Value="Театрълна трупа"></asp:MenuItem>
+                        <asp:MenuItem Text="Школи" Value="Школи"></asp:MenuItem>
+                        <asp:MenuItem Text="СМГ вестник" Value="СМГ вестник"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Обществен съвет" Value="Обществен съвет">
+                        <asp:MenuItem Text="Покана създаване" Value="Покана създаване"></asp:MenuItem>
+                        <asp:MenuItem Text="Покана РС" Value="Покана РС"></asp:MenuItem>
+                        <asp:MenuItem Text="Правилник" Value="Правилник"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Нстоятелство" Value="Нстоятелство"></asp:MenuItem>
+                    <asp:MenuItem Text="Курсове" Value="Курсове" NavigateUrl="~/Курсове.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Галерия" Value="Галерия" NavigateUrl="~/Галерия.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Контакти" Value="Контакти" NavigateUrl="~/За контакти.aspx"></asp:MenuItem>
+                </Items>
+                <StaticMenuItemStyle BackColor="Gray" BorderColor="Gray" ForeColor="White" HorizontalPadding="3px" ItemSpacing="5px" />
+        </asp:Menu>
+        </td>          
+
+            <asp:Panel ID="Panel2" runat="server">
+                <table border="1" style="vertical-align: top">
+                <tr>
+
+                    
+                    
+                        
+                                   <td colspan="2" rowspan="2" style="vertical-align: top">
+                                       <asp:Panel ID="Panel4" runat="server">
+                                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                           </asp:ContentPlaceHolder>
+                                       </asp:Panel>
+                                   </td>
+            </table>
+                 
+            </asp:Panel>
+            
+            
+        </asp:Panel>
+            <table style=" text-align: left; color: #FFFFFF; background-color: #003366;">
+        <td>
+                 Създаден от Калина Николова 157-кнр, 2018 © Всички права запазени.
+            </td>
+        </table>
+        </center>
+
+        </div>
+    </form>
+</body>
+</html>
+
+
